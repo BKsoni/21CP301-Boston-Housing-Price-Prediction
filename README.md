@@ -9,3 +9,13 @@ Activate environment
 ```
 conda activate venv
 ```
+
+Install modules from requirements.txt
+```
+pip install -r requirements.txt
+```
+
+Run web application
+```
+python app.py
+```
