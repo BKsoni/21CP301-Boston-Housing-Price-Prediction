@@ -19,3 +19,7 @@ Run web application
 ```
 python app.py
 ```
+
+Output sceenshots
+![ScreenShot](/screenshots/output_ss_1.png)
+![ScreenShot](/screenshots/output_ss_1.png)
