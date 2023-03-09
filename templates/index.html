@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="seven"><h1>Housing price prediction using Boston dataset</h1></div>
+    <form action="{{ url_for('predict')}}"method="post">
+        <table class="table" align="center">
+            <tr><td><input  type="text" class="textbox" name="CRIM" placeholder="CRIM" required="required"/></td><td><input type="text" class="textbox" name="ZN" placeholder="ZN" required="required" /></td></tr>
+            <tr><td><input type="text" class="textbox" name="INDUS" placeholder="INDUS" required="required" /></td><td><input type="text" class="textbox" name="CHAS" placeholder="CHAS" required="required" /></td></tr>
+            <tr><td><input type="text" class="textbox" name="NOX" placeholder="NOX" required="required" /></td><td><input type="text" class="textbox" name="RM" placeholder="RM" required="required" /></td></tr>
+            <tr><td><input type="text" class="textbox" name="Age" placeholder="Age" required="required" /></td><td><input type="text" class="textbox" name="RAD" placeholder="RAD" required="required" /></td></tr>
+            <tr><td><input type="text" class="textbox" name="DIS" placeholder="DIS" required="required" /></td><td><input type="text" class="textbox" name="TAX" placeholder="TAX" required="required" /></td></tr>
+            <tr><td><input type="text" class="textbox" name="PTRATIO" placeholder="PTRATIO" required="required" /></td><td><input type="text" class="textbox" name="B" placeholder="B" required="required" /><br></td></tr>
+            <tr><td><input type="text" class="textbox" name="LSTAT" placeholder="LSTAT" required="required" /></td><td><button type="submit" class="submit-btn">Predict</button></td></tr>
+            
+        </table>
+    </form>
+    <div class="seven"><h1>Prediction = {{prediction_text}}</h1></div>
+</body>
+</html>
